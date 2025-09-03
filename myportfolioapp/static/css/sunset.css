@@ -730,4 +730,44 @@
   }
   
 
+  /*       ScrollBar vertical        */
+
+@keyframes scrolling {
+  to {
+    transform: translate(calc(-50%));
+  }
+}
+
+.scroll-watcher {
+  height: 300px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  scale: 0 1;
+  transform-origin: left;
+  animation: scroll-watcher linear;
+  animation-timeline: scroll(y);
   
+}
+
+@keyframes scroll-watcher {
+  to { scale: 1 1; }
+}
+
+ /*       ScrollBar 1        */
+
+#scrollbar1::-webkit-scrollbar {
+    width: 10px;
+}
+
+#scrollbar1::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: #e7e7e7;
+    border: 1px solid #cacaca;
+}
+
+#scrollbar1::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #d55959;
+}
