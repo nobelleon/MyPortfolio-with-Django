@@ -1,0 +1,56 @@
+{% load static %}
+
+<header>
+    <nav>
+      <ul><br>
+         <li><a href="/welcome/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/my_youtube/">My Youtube</a></li>
+          <li><a href="/portfolio/">Portfolio</a></li>
+          <li><a href="/contact/">Contact</a></li>
+       </ul>
+     </nav>
+  
+  </header>
+
+  <body>
+  <!-- Time -->
+
+    f<canvas id="canvas" width="500" height="500" >cccc</canvas>
+
+    <!-- Music player -->
+
+    <div id="snow-container"></div>
+	<div id="typing"></div>
+
+	<div class="audioBox">
+		<div id="audioPlayerContainer">
+			<div id="audioPlayerControl">
+				<svg id="playPauseIcon" width="40" height="48" viewBox="-6 -2 32 32">
+					<path id="playIcon" d="M10 7.5v15L22.5 15z" fill="cyan" />
+					<path id="pauseIcon" d="M9 22.5h4.5v-15H9v15zm7.5-15v15H21v-15h-4.5z" fill="cyan" style="display: none;" />
+				</svg>
+				<div id="progressBarContainer">
+					<div id="progressBar"></div>
+				</div>
+				<svg id="volumeIcon" width="40" height="48" viewBox="0 0 24 24">
+					<path d="M13 5v14l-5-4H3V9h5z" fill="cyan" />
+					<path stroke-linecap="round" d="M13 14c1.5-1 1.5-3 0-4" fill="cyan" />
+				</svg>
+
+			</div>
+			<div id="volumeControlContainer" style="transform: translate(230px, -40px)">
+				<input type="range" id="volumeControl" min="0" max="1" step="0.01" value="1">
+			</div>
+
+			<audio id="audioPlayer">
+				<source src="http://webaudioapi.com/samples/audio-tag/chrono.mp3" type="audio/mp3">
+			</audio>
+		</div>
+    </div>
+
+     
+
+    <script src="{% static 'time.js' %}"></script>
+
+</body>

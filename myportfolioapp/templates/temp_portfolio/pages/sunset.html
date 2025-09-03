@@ -1,0 +1,108 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nobelleon Mahardhika</title>
+    <link rel="stylesheet" href="{% static 'css/sunset.css' %}">
+</head>
+
+<body>
+    
+       {% include 'temp_portfolio/partials/_header_sunset.html' %}
+      
+      <div class="gradient-reveal"></div>
+      
+       <div class="audio-enable">
+        <p>ENTER EXPERIENCE<br />WITH SUNSET</p>
+        <button class="enable-button" id="enableBtn">START</button>
+
+         <div class="cursor-dot-outline"></div>
+         <div class="cursor-dot"></div>
+       </div>
+
+      <div class="preloader" id="preloader">
+        <span id="counter">[000]</span>
+      </div>
+      
+      <div class="geometric-background">
+        <svg class="geometric-svg" viewBox="0 0 1920 1080">
+          <g id="grid-lines"></g>
+          <g id="circles-outline"></g>
+          <g id="circles-filled">
+            <clipPath id="right-half">
+              <rect x="960" y="0" width="960" height="1080" />
+            </clipPath>
+            <g clip-path="url(#right-half)"></g>
+          </g>
+      
+          <text class="geometric-text" x="100" y="100">THE CREATIVE</text>
+          <text class="geometric-text" x="100" y="115">PROCESS</text>
+      
+          <text class="geometric-text" x="1720" y="100">THE ESSENCE</text>
+          <text class="geometric-text" x="1720" y="115">OF SOUND</text>
+      
+          <text class="geometric-text" x="100" y="980" id="debugLine1">AWARENESS: SILENCE</text>
+          <text class="geometric-text" x="100" y="995" id="debugLine2">STATE: VOID</text>
+          <text class="geometric-text" x="100" y="1010" id="debugLine3">ENERGY: DORMANT</text>
+          <text class="geometric-text" x="100" y="1025" id="debugLine4">PRESENCE: SOLID</text>
+      
+          <text class="geometric-text" x="1620" y="980">BETWEEN THE</text>
+          <text class="geometric-text" x="1620" y="995">HEARTBEATS</text>
+        </svg>
+
+      </div>
+      
+      <audio id="startClickSound" preload="auto">
+        <source src="https://assets.codepen.io/7558/preloader-2s-001.mp3" type="audio/mpeg">
+      </audio>
+      
+      <!-- <audio id="preloaderSound" preload="auto">
+        <source src="http://webaudioapi.com/samples/audio-tag/chrono.mp3" type="audio/mpeg">
+      </audio> -->
+      
+      <audio id="scrollSound1" loop preload="auto">
+        <source src="https://assets.codepen.io/7558/glitch-fx-001.mp3" type="audio/mpeg">
+      </audio>
+      
+      <audio id="scrollSound2" loop preload="auto">
+        <source src="https://assets.codepen.io/7558/glitch-fx-001.mp3" type="audio/mpeg">
+      </audio>
+      
+      <audio id="scrollSound3" loop preload="auto">
+        <source src="https://assets.codepen.io/7558/glitch-fx-001.mp3" type="audio/mpeg">
+      </audio>
+      
+      <audio id="hoverSound" preload="auto">
+        <source src="https://assets.codepen.io/7558/preloader-2s-001.mp3" type="audio/mpeg">
+      </audio>
+      
+      <audio id="backgroundMusic" loop preload="auto">
+        <source src="http://webaudioapi.com/samples/audio-tag/chrono.mp3" type="audio/mpeg">
+      </audio>
+      
+      <div class="center-circle">
+        <div class="circle-container">
+          <div class="glowing-circle" id="glowCircle"></div>
+        </div>
+      </div>
+      
+      <section class="section section-1">
+        <div class="section-content"></div>
+      </section>
+      
+      <section class="section section-2">
+        <div class="section-content"></div>
+      </section>
+      
+      <section class="section section-3">
+        <div class="section-content"></div>
+      </section>
+      
+      {% include 'temp_portfolio/partials/_footer_sunset.html' %}
+
+
+     
+
+</body>

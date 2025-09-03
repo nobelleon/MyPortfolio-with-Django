@@ -1,0 +1,51 @@
+ {% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nobelleon Mahardhika About</title>
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+</head>   
+
+<header>
+   <!-- title & content -->
+      <section class="header-content">
+        <h1 class="text-gradient-about">About <span>Me</span></h1> <br><br>
+        <p class="splt"> I am a mobile app developer based in South Tangerang, Indonesia.<br>
+            I have a S.kom of computer science from the University of Pembangunan Nasional (Veteran), Jakarta.<br>
+            I am currently activity is creating a personal mobile application project, improving modifying mobile apps and develop mobile apps.
+        </p>
+
+      
+        <br>
+        
+       
+        <a href="https://resume.io/r/uwbykWK8i" onclick="return true;">
+          <button>Know more</button>
+        </a>
+        <a href="mailto:nobelleon.86@gmail.com" onclick="return true;">
+          <button>Hire Me</button>
+        </a>
+        <button onclick="window.location.href='/welcome/'">Home</button>
+        
+  {% block content %}
+
+   <div class="cursor-dot-outline"></div>
+    <div class="cursor-dot"></div>
+
+    {% include 'temp_portfolio/partials/stamp_about.html' %} 
+  
+
+    <script src="{% static 'app.js' %} "></script>
+    <script src="{% static 'spl.js' %} "></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script> 
+
+  {% endblock %}
+
+    </section>
+            
+</header>
+
+   
+  

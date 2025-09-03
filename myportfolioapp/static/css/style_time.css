@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+body {
+    background-color: #021027;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 100vh;
+    margin: 0;
+
+}
+
+.background {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+    
+  }
+
+    /* ================= Header ============ */
+    header{
+        position: absolute;
+        top:0%;
+        left: 0%;
+        width:100%;
+        margin: 0;
+        padding: 0;
+      }
+    
+       /* navbar */
+       nav{
+        color: #FFF;
+        float: right;
+        margin:30px 90px;
+      }
+      nav ul{
+        list-style: none;
+        font-family: "Josefin Slab", serif;
+      }
+      nav ul li {
+        float: left;
+        transition: .3s;
+      }
+      nav ul li a{
+        text-decoration: none;
+        color: white;
+        transition: .5;
+        font-size: 15px;
+        margin-left:16px;
+      }
+      nav ul li:hover a{
+        text-decoration: none;
+        color: #591BC5;;
+      }
+      nav ul li:hover{
+        height: 45px;
+        padding-top: 30px;
+        margin-top: -30px;
+       background: white;
+        text-decoration: none;
+        transform: skew(15deg);
+      }
+    
+      
+      ul {
+        list-style: none;
+        font-size: 12.5%;
+      }
+      
+      a {
+        text-decoration: none;
+      }
+      
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    
+
+ /* Custom Dot Cursor */
+
+ .header:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 50px;
+    height: 2px;
+    background-color: #52a3b6;
+    transform: translateX(-50%);
+  }
+  
+  
+  @media (min-width: 800px) {
+    .col {
+      width: 50%;
+      float: left;
+   }
+    .col:nth-of-type(2n+1) {
+      clear: left;
+   }
+  }
+  .col.col--full {
+    width: 100%;
+  }
+  html, body, html *, body * {
+    cursor: none;
+  }
+  .cursor-dot, .cursor-dot-outline {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  .cursor-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #52a3b6;
+  }
+  .cursor-dot-outline {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(125, 186, 200, 0.5);
+  }
+
+

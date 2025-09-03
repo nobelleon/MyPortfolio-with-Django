@@ -1,0 +1,42 @@
+{% load static %}
+
+<header>     
+    <!-- title & content -->
+      <section class="header-content">
+         <h1 class="splt">Credentials and Portfolio</h1> <br>
+        <br>
+        <p> Here I attach my resume, some source code for my other projects that is on my GitHub and i also include social media to share and support.<br>
+          <!--  Visit : <a href="resume.html">My Resume</a> | <a href="https://github.com/nobelleon">My GitHub</a> -->
+        </p>
+
+       
+        <br>
+        <br>
+        <br>
+       
+        <button onclick="window.location.href='/resume/'">Resume</button>
+        <a href="https://github.com/nobelleon" onclick="return true;">
+          <button>GitHub</button>
+        </a>
+        <button onclick="window.location.href='/social_media/'">Social Media</button>
+        <button onclick="window.location.href='/welcome/'">Home</button>   
+        
+         
+
+     <div class="cursor-dot-outline"></div>
+     <div class="cursor-dot"></div>
+
+      {% include 'temp_portfolio/partials/stamp_portfolio.html' %} 
+
+     <script src="{% static 'app.js' %}"></script>
+     <script src="{% static 'spl.js' %}"></script>
+     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+
+     
+        
+      </section> 
+
+    </header>
+
+    

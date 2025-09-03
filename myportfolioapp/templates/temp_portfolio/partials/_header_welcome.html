@@ -1,0 +1,71 @@
+{% load static %}
+
+ <header>
+
+    {% include 'temp_portfolio/partials/navbar_index.html' %}
+
+     <!-- title & content -->
+    <section class="header-content">
+      <!-- <h1>Welcome</h1> -->
+       <div class="neon-container">
+        <h1 class="neon-text-welcome">Welcome</h1>
+      </div><br><br>
+      <p> Welcome to my portfolio. I am passionated about dart programming,<br>
+         making high quality mobile app products to make your life easier.</p>
+
+         
+         <br>
+         <br>
+         
+      <button onclick="window.location.href='/experience/'">Experience</button>
+      
+      <button onclick="window.location.href='/portfolio/'">Portfolio</button>
+
+    {% block content %}
+
+
+    <div class="cursor-dot-outline"></div>
+    <div class="cursor-dot"></div>
+  
+    <script src="{% static 'app.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>     
+    <script src="https://unpkg.com/split-type"></script>
+
+     <!-- Audio Animation -->
+      <div class="demo-1 tooltip" data-tooltip="Click the sound!">
+        <div class="audio--container">
+
+            <div class="audiobar"></div>
+            <div class="audiobar"></div>
+            <div class="audiobar"></div>
+            <div class="audiobar"></div>
+            <div class="audiobar"></div>
+            <div class="audiobar"></div>
+            <div class="audiobar"></div>
+            <div class="audiobar"></div>
+            <div class="audiobar"></div>
+            <div class="audiobar"></div>
+            <div class="audiobar"></div>
+            <div class="audiobar"></div>
+            <div class="audiobar"></div>
+            <div class="audiobar"></div>
+            <div class="audiobar"></div>
+            <div class="audiobar"></div>
+            <div class="audiobar"></div>
+            <div class="audiobar"></div>
+            <div class="audiobar"></div>
+
+          </div>
+        </div> 
+    
+    <audio src="http://webaudioapi.com/samples/audio-tag/chrono.mp3"></audio>
+
+    <script src="{% static 'welcome.js' %}"></script>
+
+    {% endblock %}
+    
+    </section>
+       
+  </header>
+
+  

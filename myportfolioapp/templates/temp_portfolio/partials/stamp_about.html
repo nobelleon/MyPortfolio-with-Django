@@ -1,0 +1,41 @@
+ {% load static %}
+
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nobelleon Mahardhika stamp</title>
+    <link rel="stylesheet" href="{% static 'css/stamp.css' %}">
+</head>
+
+<header>
+
+  {% block content %}
+
+  <section>
+
+  <div class="container">
+    <div class="child">
+      <div class="content">
+        <div>
+        <div id="button" class="HoverButton"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stamp">
+    <div class="circle">
+      <p id="circle-content">ABOUTME. ABOUTME. ABOUTME. </p>
+    </div>
+    <p>2025</p>
+  </div>   
+
+</section>
+
+   {% endblock %}
+
+</header>
+
+    <script src="{% static 'spl.js' %} "></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script> 
