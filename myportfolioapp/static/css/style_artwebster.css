@@ -134,7 +134,7 @@ body {
     z-index: 0;
   } 
 
-  .text-youtube {
+  .text-arts {
     position: absolute;   
     display: inline-block;
     color: var(--text);
