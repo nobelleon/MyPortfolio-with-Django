@@ -1,0 +1,57 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City views on top</title>
+    <link rel="stylesheet" href="{% static 'css/city_views_on_top.css' %}">
+</head>
+<body>
+     <header class="site-header">
+        <div class="header-container">
+          <div class="logo-container">
+            <div class="logo-circles">
+              <div class="circle circle-1"></div>
+              <div class="circle circle-2"></div>
+            </div>
+          </div>
+      
+          <nav class="main-nav">
+            <ul>
+              <li>
+                <a href="/welcome/">HOME</a>
+              </li>
+              <li>
+                <a href="/sunset/">SUNSET</a>
+              </li>
+              <li>
+                <a href="/aerial/">AERIAL</a>
+              </li>
+              <li>
+                <a href="/location/">Location</a>
+              </li>
+              <li>
+                <a href="/contact/">CONTACT</a>
+              </li>
+             
+            </ul>
+          </nav>
+      
+          <div class="contact-link">
+            <a href="/art_webster/">+ARTWEBSTER</a>
+          </div>
+          
+        </div>
+
+      </header>
+
+
+      <div class="cursor-dot-outline"></div>
+      <div class="cursor-dot"></div>
+      
+    <script src="{% static 'city_views_on_top.js' %}"></script>
+   
+</body>
+</html>

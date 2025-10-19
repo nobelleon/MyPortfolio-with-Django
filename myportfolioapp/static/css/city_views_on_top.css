@@ -1,0 +1,232 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+:root {
+    --font-primary: "PPSupplyMono", "Courier New", monospace;
+    --text-color: rgba(245, 245, 245, 0.9);
+    --warm-off-black: #a8bde9;
+    --warm-off-white: #f8f5f2;
+  }
+  
+  
+@font-face {
+    font-family: "PPSupplyMono";
+    src: url("https://assets.codepen.io/7558/PPSupplyMono-Regular.ttf")
+      format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb( 0, 0, 0 );
+}
+
+canvas {
+    touch-action: none;
+}
+
+
+/* MENU */
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: transparent;
+    z-index: 100;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    align-items: center;
+    padding: 0 2rem;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .logo-container {
+    grid-column: 1 / 3;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 2rem;
+  }
+  
+  .logo-circles {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+    transition: transform 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: var(--text-color);
+    top: 50%;
+  }
+  
+  .circle-1 {
+    left: 0;
+    transform: translate(0, -50%);
+  }
+  
+  .circle-2 {
+    left: 1rem;
+    transform: translate(0, -50%);
+    mix-blend-mode: exclusion;
+  }
+  
+  .logo-container:hover .circle-1 {
+    transform: translate(-0.5rem, -50%);
+  }
+  
+  .logo-container:hover .circle-2 {
+    transform: translate(0.5rem, -50%);
+  }
+  
+  .main-nav {
+    grid-column: 4 / 8;
+  }
+  
+  .main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .main-nav li {
+    position: relative;
+  }
+  
+  .main-nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 12px;
+    font-family: var(--font-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: block;
+    position: relative;
+    padding-left: 8px;
+    transition: color 0.2s ease;
+  }
+  
+  
+  .contact-link {
+    grid-column: 9 / 13;
+    text-align: right;
+  }
+  
+  .contact-link a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 12px;
+    font-family: var(--font-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: opacity 0.3s ease;
+  }
+  
+  .contact-link a:hover {
+    opacity: 0.7;
+  }
+
+  .audio-enable {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #021027;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    font-family: var(--font-primary);
+    font-size: 12px;
+    color: var(--text-color);
+    text-transform: uppercase;
+    gap: 2rem;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .enable-button:hover {
+    background: var(--text-color);
+    color: #021027;
+  }
+
+  /* Custom Dot Cursor */
+
+.header:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 50px;
+    height: 2px;
+    background-color: #52a3b6;
+    transform: translateX(-50%);
+  }
+  
+  
+  @media (min-width: 800px) {
+    .col {
+      width: 50%;
+      float: left;
+   }
+    .col:nth-of-type(2n+1) {
+      clear: left;
+   }
+  }
+  .col.col--full {
+    width: 100%;
+  }
+  html, body, html *, body * {
+    cursor: none;
+  }
+  .cursor-dot, .cursor-dot-outline {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  .cursor-dot {
+    width: 8px;
+    height: 8px;
+    background-color: cyan;
+  }
+  .cursor-dot-outline {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(125, 186, 200, 0.5);
+  }
+  

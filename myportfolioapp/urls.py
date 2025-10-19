@@ -18,5 +18,7 @@ urlpatterns = [
     path('licensing_and_certification/', views.licensing_and_certification_view, name='licensing_and_certification'),
     path('time/', views.time_view, name='time'),
     path('art_webster/', views.art_webster_view, name='art_webster'),
-    path('sunset/', views.sunset_view, name='sunset')
+    path('sunset/', views.sunset_view, name='sunset'),
+    path('city_views_on_top/', views.city_view, name='city_view'),
+    path('aerial/', views.aerial_view, name='aerial')
 ]

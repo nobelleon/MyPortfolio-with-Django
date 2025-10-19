@@ -76,3 +76,11 @@ def time_view(request):
 def sunset_view(request):
     sunset_view = loader.get_template('temp_portfolio/pages/sunset.html')
     return HttpResponse(sunset_view.render())
+
+def city_view(request):
+    city_view = loader.get_template('temp_portfolio/pages/city_views_on_top.html')
+    return HttpResponse(city_view.render())
+
+def aerial_view(request):
+    aerial_view = loader.get_template('temp_portfolio/pages/aerial.html')
+    return HttpResponse(aerial_view.render())

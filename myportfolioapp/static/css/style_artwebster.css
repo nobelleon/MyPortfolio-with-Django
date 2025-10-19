@@ -134,7 +134,7 @@ body {
     z-index: 0;
   } 
 
-  .text-arts {
+.text-youtube {
     position: absolute;   
     display: inline-block;
     color: var(--text);
@@ -142,8 +142,8 @@ body {
     text-transform: uppercase;
     opacity: 0.8;
     font-family: "TheGoodMonolith", monospace;
-    z-index: 0;
-  }   
+    z-index: 1;
+}  
 
 .main-content {
   position: relative;
@@ -154,6 +154,8 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+
 
 .sliced-container {
   position: relative;
