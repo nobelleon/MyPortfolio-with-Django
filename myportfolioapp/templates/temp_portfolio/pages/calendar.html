@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nobelleon Mahardhika</title>
+    <link rel="stylesheet" href="{% static 'css/calendar.css' %} ">
+</head>
+<body>
+    <div id="calendar-container" class="calendar-wrapper">
+    <nav>
+      <button id="btn-prev">←</button>
+      <div id="current-month-name"></div>
+      <button onclick="window.location.href='/my_youtube/'">My Youtube</button>
+      <button id="btn-today">Today</button>
+      <button id="btn-next">→</button>
+    </nav>
+    <div id="calendar-grid" class="calendar-grid">
+    </div>
+  </div>
+
+    <div class="cursor-dot-outline"></div>
+    <div class="cursor-dot"></div>
+  
+    <script src="{% static 'calendar.js' %} "></script>
+</body>
+</html>

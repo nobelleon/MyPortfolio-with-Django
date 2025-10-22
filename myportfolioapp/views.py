@@ -84,3 +84,7 @@ def city_view(request):
 def aerial_view(request):
     aerial_view = loader.get_template('temp_portfolio/pages/aerial.html')
     return HttpResponse(aerial_view.render())
+
+def calendar_view(request):
+    calendar_view = loader.get_template('temp_portfolio/pages/calendar.html')
+    return HttpResponse(calendar_view.render())

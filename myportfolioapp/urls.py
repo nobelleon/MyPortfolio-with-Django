@@ -20,5 +20,6 @@ urlpatterns = [
     path('art_webster/', views.art_webster_view, name='art_webster'),
     path('sunset/', views.sunset_view, name='sunset'),
     path('city_views_on_top/', views.city_view, name='city_view'),
-    path('aerial/', views.aerial_view, name='aerial')
+    path('aerial/', views.aerial_view, name='aerial'),
+    path('calendar/', views.calendar_view, name='calendar'),
 ]
