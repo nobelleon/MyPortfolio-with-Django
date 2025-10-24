@@ -22,4 +22,5 @@ urlpatterns = [
     path('city_views_on_top/', views.city_view, name='city_view'),
     path('aerial/', views.aerial_view, name='aerial'),
     path('calendar/', views.calendar_view, name='calendar'),
+    path('round_abstract_art/', views.round_abstract_art_view, name='round_abstract_art'),
 ]

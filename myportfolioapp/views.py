@@ -88,3 +88,7 @@ def aerial_view(request):
 def calendar_view(request):
     calendar_view = loader.get_template('temp_portfolio/pages/calendar.html')
     return HttpResponse(calendar_view.render())
+
+def round_abstract_art_view(request):
+    round_abstract_art_view = loader.get_template('temp_portfolio/pages/round_abstract_art.html')
+    return HttpResponse(round_abstract_art_view.render())

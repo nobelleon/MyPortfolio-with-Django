@@ -1,0 +1,58 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Round Abstract Art</title>
+    <link rel="stylesheet" href="{% static 'css/round_abstract_art.css' %} ">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+          <div class="logo-container">
+            <div class="logo-circles">
+              <div class="circle circle-1"></div>
+              <div class="circle circle-2"></div>
+            </div>
+          </div>
+      
+          <nav class="main-nav">
+            <ul>
+              <li>
+                <a href="/welcome/">HOME</a> 
+              </li>
+              <li>
+                <a href="/city_views_on_top/">CITY</a>
+              </li>
+              <li>
+                <a href="/sunset/">SUNSET</a>
+              </li>
+              <li>
+                <a href="/contact/">CONTACT</a>
+              </li>
+             
+            </ul>
+          </nav>
+
+           <div class="contact-link">
+            <a href="/art_webster/">+ARTWEBSTER</a>
+          </div>
+          
+        </div>
+
+        <div class="switch" id="switch"></div>
+
+      </header>
+
+      <div class="cursor-dot-outline"></div>
+      <div class="cursor-dot"></div>
+
+    <h2>NOBELL</h2><br>
+    <p>Mobile Apps Dev</p>
+    <div class="sphere" id="sphere"></div>
+
+    <script src="{% static 'round_abstract_art.js' %}"></script>
+</body>
+</html>
