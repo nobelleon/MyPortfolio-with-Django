@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Round Abstract Art</title>
     <link rel="stylesheet" href="{% static 'css/round_abstract_art.css' %} ">
+    <link rel="stylesheet" href="{% static 'css/round_abstract_art_sound.css' %} ">
 </head>
 <body>
     <header class="site-header">
@@ -39,6 +40,12 @@
            <div class="contact-link">
             <a href="/art_webster/">+ARTWEBSTER</a>
           </div>
+
+          <div id="buttons" class="text-item" style="top: 485%; left: 15%;" data-text="SOUND">.</div>
+          <!-- SOUND -->
+          <audio id="sound" loop preload="auto">
+            <source src="http://webaudioapi.com/samples/audio-tag/chrono.mp3" type="audio/mpeg">
+          </audio>
           
         </div>
 
@@ -104,6 +111,7 @@
     <div class="sphere" id="sphere"></div>
 
     <script src="{% static 'round_abstract_art.js' %}"></script>
+    <script src="{% static 'round_abstract_art_sound.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrambleTextPlugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
